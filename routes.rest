@@ -12,3 +12,31 @@ GET https://cse341-contacts-project.onrender.com/contacts
 
 ### Get contact by id
 GET https://cse341-contacts-project.onrender.com/contacts/696810bb6b11dc5855893d0e
+
+
+### Create contact
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Sarah",
+    "lastName": "Birch",
+    "email": "sarahB@gmail.com",
+    "favoriteColor": "Yellow",
+    "birthday": "12/12/20"
+}
+
+### Update contact
+PUT http://localhost:8080/contacts/696810bb6b11dc5855893d0e HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Sarah",
+    "lastName": "Birch",
+    "email": "test@gmail.com",
+    "favoriteColor": "Green",
+    "birthday": "12/12/20"
+}
+
+### Delete contact
+DELETE http://localhost:8080/contacts/696810bb6b11dc5855893d0e HTTP/1.1
