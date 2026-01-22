@@ -5,12 +5,23 @@
     "description": "API for managing contacts",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "cse341-project1-vhel.onrender.com",
   "basePath": "/",
   "schemes": [
+    "https",
     "http"
   ],
   "paths": {
+    "/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api-docs": {
       "get": {
         "description": "",
@@ -91,6 +102,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
           }
         }
       },

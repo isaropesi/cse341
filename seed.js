@@ -23,6 +23,20 @@ const contacts = [
         email: "joseph.ducreux@test.com",
         favoriteColor: "Green",
         birthday: "04/05/1985"
+    },
+    {
+        firstName: "Isabella",
+        lastName: "Conce",
+        email: "isabella.conce@test.com",
+        favoriteColor: "Pink",
+        birthday: "05/15/1995"
+    },
+    {
+        firstName: "Michael",
+        lastName: "Scott",
+        email: "m.scott@dundermifflin.com",
+        favoriteColor: "Blue",
+        birthday: "03/15/1964"
     }
 ];
 
