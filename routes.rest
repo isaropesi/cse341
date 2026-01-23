@@ -3,7 +3,7 @@
 GET http://localhost:8080/contacts
 
 ### Get contact by id
-GET http://localhost:8080/contacts/696810bb6b11dc5855893d0e
+GET http://localhost:8080/contacts/696810bb6b11dc5855893d10
 
 
 // PRODUCTION Deploy
@@ -14,7 +14,7 @@ GET https://cse341-contacts-project.onrender.com/contacts
 GET https://cse341-contacts-project.onrender.com/contacts/696810bb6b11dc5855893d0e
 
 
-### Create contact
+### Create contact (Local)
 POST http://localhost:8080/contacts HTTP/1.1
 content-type: application/json
 
@@ -26,7 +26,19 @@ content-type: application/json
     "birthday": "12/12/20"
 }
 
-### Update contact
+### Create contact (Production)
+POST https://cse341-contacts-project.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Sarah",
+    "lastName": "Birch",
+    "email": "sarahB@gmail.com",
+    "favoriteColor": "Yellow",
+    "birthday": "12/12/20"
+}
+
+### Update contact (Local)
 PUT http://localhost:8080/contacts/696810bb6b11dc5855893d0e HTTP/1.1
 content-type: application/json
 
@@ -38,5 +50,20 @@ content-type: application/json
     "birthday": "12/12/20"
 }
 
-### Delete contact
+### Update contact (Production)
+PUT https://cse341-contacts-project.onrender.com/contacts/696810bb6b11dc5855893d0e HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Sarah",
+    "lastName": "Birch",
+    "email": "test@gmail.com",
+    "favoriteColor": "Green",
+    "birthday": "12/12/20"
+}
+
+### Delete contact (Local)
 DELETE http://localhost:8080/contacts/696810bb6b11dc5855893d0e HTTP/1.1
+
+### Delete contact (Production)
+DELETE https://cse341-contacts-project.onrender.com/contacts/696810bb6b11dc5855893d0e HTTP/1.1
