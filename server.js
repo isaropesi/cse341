@@ -8,7 +8,10 @@ const port = process.env.PORT || 8080;
 const app = express();
 
 app
-  .use(cors())
+  .use(cors({
+    origin: '*',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+  }))
   .use(bodyParser.json())
   .use('/', require('./routes'));
 

@@ -8,7 +8,7 @@ GET http://localhost:8080/contacts/696810bb6b11dc5855893d10
 
 // PRODUCTION Deploy
 ### Get all contacts
-GET https://cse341-contacts-project.onrender.com/contacts
+GET https://cse341-project1-vhel.onrender.com/contacts
 
 ### Get contact by id
 GET https://cse341-contacts-project.onrender.com/contacts/696810bb6b11dc5855893d0e
